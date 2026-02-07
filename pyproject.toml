@@ -1,0 +1,20 @@
+[project]
+name = "einvoice_for_fuelants"
+version = "0.0.4"
+description = "e-Invoicing for fuelants streamlines fuel transaction management by automating GST-compliant invoicing."
+authors = [
+    {name = "SVNIX Solutions", email = "contact@svnix.solutions"}
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {file = "license.txt"}
+
+[build-system]
+requires = ["flit_core>=3.4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.module]
+name = "einvoice_for_fuelants"
+
+[tool.bench.frappe-dependencies]
+frappe = ">=15.0.0,<16.0.0"
